@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account and Data Deletion - Sudoku: Logic Puzzles</title>
+    <style>
+        :root {
+            --ink: #191b22;
+            --paper: #f9faf8;
+            --card-bg: #ffffff;
+            --slate: #6e7480;
+            --border: #e2e5dc;
+            --violet: #4f46a3;
+            --violet-light: #eef0ff;
+            --accent: #2e3039;
+            --danger: #d93838;
+            --danger-light: #fdf2f2;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --ink: #eef0ea;
+                --paper: #121318;
+                --card-bg: #1a1b22;
+                --slate: #9fa4b0;
+                --border: #2c2e38;
+                --violet: #8c82ff;
+                --violet-light: #252345;
+                --accent: #d8dce6;
+                --danger: #ff6b6b;
+                --danger-light: #301717;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--paper);
+            color: var(--ink);
+            line-height: 1.68;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--violet-light);
+            color: var(--violet);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 1.85rem;
+            color: var(--ink);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .meta {
+            font-size: 0.95rem;
+            color: var(--slate);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--ink);
+            border-left: 4px solid var(--violet);
+            padding-left: 12px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 16px;
+            color: var(--ink);
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--violet);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .step-card {
+            background: var(--violet-light);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 18px 0;
+        }
+
+        .step-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: var(--violet);
+        }
+
+        .danger-card {
+            background: var(--danger-light);
+            border-left: 4px solid var(--danger);
+            border-radius: 6px;
+            padding: 14px 18px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .btn-email {
+            display: inline-block;
+            background: var(--violet);
+            color: #ffffff !important;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .btn-email:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--slate);
+            text-align: center;
+        }
+
+        .links-nav a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">Google Play Data Safety Compliance</span>
+            <h1>Account and Data Deletion Request</h1>
+            <div class="meta">
+                <strong>Application:</strong> Sudoku: Logic Puzzles (<code>com.slaboratory.sudoku</code>)<br>
+                <strong>Developer:</strong> sLaboratory<br>
+                <strong>Last Updated:</strong> September 11, 2026
+            </div>
+        </header>
+
+        <section>
+            <p>
+                In compliance with Google Play's Account Deletion Policy and global privacy standards (GDPR, CCPA), users of <strong>Sudoku: Logic Puzzles</strong> have the right to permanently delete their user accounts and all associated data stored in our cloud databases.
+            </p>
+        </section>
+
+        <section>
+            <h2>How to Delete Your Account and Data</h2>
+            
+            <div class="step-card">
+                <div class="step-title">Method 1: Directly Inside the Application (Instant)</div>
+                <p>You can permanently delete your account directly inside the game at any time without contacting support:</p>
+                <ol>
+                    <li>Open <strong>Sudoku: Logic Puzzles</strong> on your device.</li>
+                    <li>Tap the <strong>Settings (Gear)</strong> icon in the top navigation bar.</li>
+                    <li>Select <strong>Account & Cloud Sync</strong>.</li>
+                    <li>Scroll down and tap <strong>Delete Account & Data</strong>.</li>
+                    <li>Confirm your choice. Your account credentials and cloud-synced records will be purged immediately.</li>
+                </ol>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title">Method 2: Request Deletion via Email (Web / Outside App)</div>
+                <p>If you have uninstalled the app or cannot access your device, you can submit a deletion request to our support team:</p>
+                <ul>
+                    <li>Send an email to: <a href="mailto:support@slaboratory.com?subject=Account%20and%20Data%20Deletion%20Request%20-%20Sudoku:%20Logic%20Puzzles"><strong>support@slaboratory.com</strong></a></li>
+                    <li><strong>Subject line:</strong> <code>Account and Data Deletion Request - Sudoku: Logic Puzzles</code></li>
+                    <li><strong>Body:</strong> Please provide the email address associated with your Google or Apple Sign-In account (or your anonymous User ID if known).</li>
+                </ul>
+                <a class="btn-email" href="mailto:support@slaboratory.com?subject=Account%20and%20Data%20Deletion%20Request%20-%20Sudoku:%20Logic%20Puzzles">Request Deletion via Email</a>
+                <p style="margin-top: 12px; font-size: 0.9rem; color: var(--slate);">
+                    Our technical support team will process your request and permanently purge all associated records within <strong>30 days</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>What Data Is Deleted</h2>
+            <p>Upon account deletion, the following data is permanently purged from our servers:</p>
+            <ul>
+                <li><strong>Authentication Records:</strong> Your Firebase Auth account, unique User ID (UID), and linked Google/Apple account references.</li>
+                <li><strong>Cloud Game Saves & Progress:</strong> All synced puzzle solutions, chapter completion stars, unlocked techniques, and custom constraints saved in Cloud Firestore.</li>
+                <li><strong>Multiplayer Data:</strong> Duel history, match room logs, and competitive rankings in Firebase Realtime Database.</li>
+                <li><strong>Virtual Currency Ledger:</strong> In-game soft currency (Blue Crystals) history.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What Data May Be Retained</h2>
+            <div class="danger-card">
+                <p>
+                    <strong>Financial and In-App Purchase Records:</strong> Purchase receipts processed through Google Play In-App Billing or RevenueCat may be retained strictly for tax compliance, anti-fraud auditing, and statutory financial reporting as required by applicable laws. These records do not contain personal gameplay history.
+                </p>
+                <p style="margin-bottom: 0;">
+                    <strong>Local Device Storage:</strong> Deleting your cloud account does not automatically delete locally cached SQLite data on your phone. To remove all local data, simply clear the app storage in your Android device settings or uninstall the app.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>If you have any questions regarding data deletion or privacy, please reach out to us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@slaboratory.com">support@slaboratory.com</a></li>
+                <li><strong>Developer:</strong> sLaboratory</li>
+                <li><strong>Privacy Policy:</strong> <a href="privacy.html">View Privacy Policy</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 sLaboratory. All rights reserved.</p>
+            <div class="links-nav" style="margin-top: 10px;">
+                <a href="terms.html">Terms of Service</a> &bull;
+                <a href="privacy.html">Privacy Policy</a> &bull;
+                <a href="delete-account.html">Delete Account</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
